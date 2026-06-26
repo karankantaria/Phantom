@@ -21,7 +21,7 @@ author's own device and account. See [Ethics](#ethics).
 📄 **`PoGo_AntiCheat_Report.md`** (and `PoGo_AntiCheat_Report.pdf`) — *"Maps Says Yes,
 the Game Says No: Why Non-Jailbreak iOS GPS Spoofing Can't Beat Modern Anti-Cheat."*
 
-> DOI: _to be added after Zenodo publication_
+> **Paper DOI:** [10.5281/zenodo.20917374](https://doi.org/10.5281/zenodo.20917374) · **Code DOI:** [10.5281/zenodo.20916696](https://doi.org/10.5281/zenodo.20916696)
 
 Key findings:
 - A working host-side spoofer on the iOS 17+ RemoteXPC / DVT `LocationSimulation` path
@@ -88,5 +88,10 @@ was discovered or exploited; only Apple's documented developer tooling is used.
 
 ## Citation
 
-If you reference this work, please cite the paper via its DOI (to be added after
-publication) or this repository.
+If you reference this work, please cite the paper:
+
+> Kantaria, K. (2026). *Maps Says Yes, the Game Says No: Why Non-Jailbreak iOS GPS
+> Spoofing Can't Beat Modern Anti-Cheat.* Zenodo. https://doi.org/10.5281/zenodo.20917374
+
+The accompanying software artifact is archived separately at
+https://doi.org/10.5281/zenodo.20916696.
