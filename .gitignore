@@ -1,0 +1,51 @@
+# ───── Python virtual environments (NEVER commit — recreate from requirements.txt) ─────
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# ───── Python caches / bytecode ─────
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# ───── Build / packaging artifacts (PyInstaller, electron-builder — Phase 5/9) ─────
+build/
+dist/
+*.spec
+*.manifest
+node_modules/
+release/
+
+# ───── Local config / secrets ─────
+.env
+.env.*
+*.local
+settings.local.json
+
+# ───── Logs / scratch ─────
+*.log
+scratchpad/
+tmp/
+
+# ───── Local-only working docs (internal notes / handoffs — kept out of the public repo) ─────
+_local/
+
+# ───── Device / runtime artifacts ─────
+# pymobiledevice3 pairing records & DDIs live in the user profile, not the repo — but ignore any local copies:
+*.plist.bak
+*.gpx.tmp
+
+# ───── OS / editor junk ─────
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/

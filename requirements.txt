@@ -1,0 +1,17 @@
+# Phantom — Python dependencies
+# Recreate the environment with:
+#     python -m venv .venv
+#     .venv\Scripts\python -m pip install -r requirements.txt   (Windows)
+#     source .venv/bin/activate && pip install -r requirements.txt   (macOS/Linux)
+#
+# Requires Python 3.11+ (3.14 used here for the in-process userspace tunnel path).
+# WINDOWS NOTE: pymobiledevice3 pulls in lzfse + pylzss, which have NO prebuilt wheels
+# for Python 3.13/3.14 — pip compiles them from source, so you need the
+# "Microsoft C++ Build Tools" (MSVC v14+) installed, or use Python <=3.12 (has wheels).
+# Also requires Apple's "Apple Mobile Device Support" (usbmuxd) for USB device access.
+
+# Core device protocol layer: tunnel mgmt, DDI mount, simulate-location (the critical dependency).
+pymobiledevice3==9.30.1
+
+# FastAPI + uvicorn (local API/WebSocket) and gpxpy (GPX routes) are pulled in transitively
+# by pymobiledevice3 today; they'll be promoted to explicit pins when Phase 3 (API) starts.
